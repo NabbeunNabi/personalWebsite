@@ -1,3 +1,3 @@
 # personalWebsite
 
-built with vite react
+built with vite react and tailwind
