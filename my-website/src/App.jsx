@@ -1,15 +1,13 @@
-import './App.css'
+import "./App.css";
+import StickyContactButton from "./components/StickyContactButton";
 
 function App() {
-
-
   return (
     <>
-    <div className='font-sans'>
-      Will Brammer
-      </div>
+      <StickyContactButton />
+      <div className="font-sans z-10">Will Brammer</div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
