@@ -2,7 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
+*,
+*:after,
+*:before {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
+}
+
+.button-fill-l-to-r {
+  text-align: center;
+  background: rgb(224 242 254) 100%;
+
+  background: linear-gradient(
+      to left,
+      rgb(224 242 254) 50%,
+      rgb(219 39 119) 50%
+    )
+    right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+.button-fill-l-to-r:hover {
+  background-position: left;
+}
+
+.transition-fill-left {
+  background-position: left !important;
+  transition: background-position 0.5s ease-out !important;
 }
