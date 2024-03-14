@@ -1,11 +1,22 @@
 import "./App.css";
+
 import StickyContactButton from "./components/StickyContactButton";
+import VideoWithOverlay from "./components/VideoWithOverlay";
+import data from "../text.json";
 
 function App() {
   return (
     <>
-      <StickyContactButton />
-      <div className="font-sans z-10">Will Brammer</div>
+      <div className="z-20">
+        <StickyContactButton />
+      </div>
+
+      <div className="flex justify-center items-center h-[50vh] rounded">
+        <VideoWithOverlay
+          videoSrc={"/MeAndCocoaUpdated.mp4"}
+          text={data.text}
+        />
+      </div>
     </>
   );
 }

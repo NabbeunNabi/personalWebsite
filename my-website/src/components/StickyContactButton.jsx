@@ -27,10 +27,11 @@ const StickyContactButton = () => {
   return (
     <>
       {!contactOpen ? (
-        <div className="fixed top-5 right-5">
+        <div className="z-20 fixed top-6 right-8">
           <button
             className="bg-blue-600 text-black rounded-full p-4 hover:bg-pink-600 focus:outline-none focus:ring focus:border-blue-100 hover:scale-110"
             onClick={modalOfContact}
+            on
           >
             <MessageCircleIcon />
           </button>
