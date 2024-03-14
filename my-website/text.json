@@ -1,6 +1,9 @@
 {
-  "text": {
+  "textVideo": {
     "videoOverlay": "Will Brammer",
     "videoOverlaySubtext": "Software Engineer"
+  },
+  "textFlip": {
+    "cardOne": { "front": "Mr. Turtlenecks", "back": "is cool" }
   }
 }

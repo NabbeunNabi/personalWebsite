@@ -1,6 +1,7 @@
 import "./App.css";
 
 import StickyContactButton from "./components/StickyContactButton";
+import FlipCard from "./components/FlipCard";
 import VideoWithOverlay from "./components/VideoWithOverlay";
 import data from "../text.json";
 
@@ -11,11 +12,17 @@ function App() {
         <StickyContactButton />
       </div>
 
-      <div className="flex justify-center items-center h-[50vh] rounded">
+      <div className="flex justify-center items-center h-[50vh] rounded mb-12">
         <VideoWithOverlay
           videoSrc={"/MeAndCocoaLowerRes.mp4"}
-          text={data.text}
+          text={data.textVideo}
         />
+      </div>
+      <div>
+        <FlipCard
+          textFront={data.textFlip.cardOne.front}
+          textBack={data.textFlip.cardOne.back}
+        ></FlipCard>
       </div>
     </>
   );
