@@ -42,7 +42,7 @@ const VideoWithOverlay = ({ videoSrc, text }) => {
 
   return (
     <div className="relative w-full h-full bg-gray-500">
-      <video autoPlay muted className="w-full h-full">
+      <video autoPlay muted playsInline className="w-full h-full">
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
