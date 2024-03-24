@@ -3,26 +3,10 @@ import { MessageCircleIcon, XCircleIcon } from "lucide-react";
 
 const StickyContactButton = () => {
   const [contactOpen, setContactOpen] = useState(false);
-  const [isActive, setIsActive] = useState(false);
 
   function modalOfContact() {
     setContactOpen((prev) => !prev);
-    handleToggleActive;
   }
-
-  const handleToggleActive = () => {
-    setIsActive((prev) => !prev);
-  };
-
-  const boxStyle = {
-    width: "200px",
-    height: "200px",
-    background: isActive
-      ? "linear-gradient(to top right, #ffcc00, #ff6600)"
-      : "linear-gradient(to bottom left, #ffcc00, #ff6600)",
-    transition: "background 0.5s ease",
-    cursor: "pointer",
-  };
 
   return (
     <>
@@ -31,7 +15,6 @@ const StickyContactButton = () => {
           <button
             className="bg-blue-600 text-black rounded-full p-4 hover:bg-pink-600 focus:outline-none focus:ring focus:border-blue-100 hover:scale-110"
             onClick={modalOfContact}
-            on
           >
             <MessageCircleIcon />
           </button>
@@ -39,7 +22,7 @@ const StickyContactButton = () => {
       ) : (
         <>
           <div className="contact-fill absolute top-0 right-0 h-screen w-screen z-50 bg-sky-100 flex flex-col items-center justify-center">
-            <div className="fixed top-5 right-5">
+            <div className="fixed top-6 right-8">
               <button
                 onClick={modalOfContact}
                 className="bg-blue-600 text-black rounded-full p-4 hover:bg-pink-600 focus:outline-none focus:ring focus:border-blue-100 transform transition-transform duration-300 hover:rotate-180 hover:scale-110"

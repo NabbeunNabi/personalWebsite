@@ -1,7 +1,7 @@
 import "./App.css";
 
 import StickyContactButton from "./components/StickyContactButton";
-import FlipCard from "./components/FlipCard";
+import FlipCard from "./components/flipcard/FlipCard";
 import VideoWithOverlay from "./components/VideoWithOverlay";
 import data from "../text.json";
 
