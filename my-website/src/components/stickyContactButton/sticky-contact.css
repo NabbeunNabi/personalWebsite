@@ -1,16 +1,16 @@
 .button-fill-l-to-r {
   text-align: center;
-  background: rgb(224 242 254) 100%;
-
+  background: rgb(224, 242, 254) 100%;
   background: linear-gradient(
       to left,
-      rgb(224 242 254) 50%,
-      rgb(219 39 119) 50%
+      rgb(224, 242, 254) 50%,
+      rgb(219, 39, 119) 50%
     )
     right;
-  background-size: 200%;
+  background-size: 200% 100%; /* Adjusted background size */
   transition: 0.5s ease-out;
 }
+
 .button-fill-l-to-r:hover {
   background-position: left;
 }
@@ -18,32 +18,4 @@
 .transition-fill-left {
   background-position: left !important;
   transition: background-position 0.5s ease-out !important;
-}
-
-.contact-fill {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: 50;
-  background-color: rgba(224, 242, 254, 1);
-  clip-path: circle(75%);
-}
-
-.contact-fill.active {
-  animation: 1s circle reverse;
-}
-
-@keyframes circle {
-  0% {
-    clip-path: circle(75%);
-    background-color: rgba(224, 242, 254, 1);
-  }
-  100% {
-    clip-path: circle(0%);
-    background-color: rgba(224, 242, 254, 0);
-  }
 }

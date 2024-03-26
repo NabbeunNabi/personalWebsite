@@ -2,4 +2,48 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  overflow: hidden;
+}
+
+.contact-fill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+  background-color: rgba(224, 242, 254, 1);
+  /* clip-path: circle(75%); */
+}
+
+.contact-fill.active {
+  animation: 1s circle reverse;
+}
+
+main.active {
+  animation: 1s mainCircle reverse;
+}
+
+@keyframes circle {
+  0% {
+    clip-path: circle(75%);
+    background-color: rgba(224, 242, 254, 1);
+  }
+  100% {
+    clip-path: circle(0%);
+    background-color: rgba(224, 242, 254, 0);
+  }
+}
+
+@keyframes mainCircle {
+  0% {
+    clip-path: circle(75%);
+    background-color: white;
+  }
+  100% {
+    clip-path: circle(0%);
+    background-color: rgba(224, 242, 254, 0);
+  }
 }

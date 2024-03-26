@@ -2,11 +2,20 @@ import React, { useState } from "react";
 import { MessageCircleIcon, XCircleIcon } from "lucide-react";
 import "../stickyContactButton/sticky-contact.css";
 
-const StickyContactButton = () => {
+const StickyContactButton = ({ setMainAnimation }) => {
   const [contactOpen, setContactOpen] = useState(false);
 
   function modalOfContact() {
     setContactOpen((prev) => !prev);
+  }
+
+  function closeContactModal() {
+    setMainAnimation(true);
+    setContactOpen((prev) => !prev);
+
+    setTimeout(() => {
+      setMainAnimation(false);
+    }, 1000);
   }
 
   return (
@@ -24,7 +33,7 @@ const StickyContactButton = () => {
         <div className={`contact-fill${contactOpen ? " active" : ""}`}>
           <div className="fixed top-6 right-8">
             <button
-              onClick={modalOfContact}
+              onClick={closeContactModal}
               className="bg-blue-600 text-black rounded-full p-4 hover:bg-pink-600 focus:outline-none focus:ring focus:border-blue-100 transform transition-transform duration-300 hover:rotate-180 hover:scale-110"
               role="img"
               aria-label="Close"
