@@ -2,7 +2,28 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .contact-fill {
@@ -15,11 +36,15 @@
   height: 100vh;
   z-index: 50;
   background-color: rgba(224, 242, 254, 1);
-  /* clip-path: circle(75%); */
 }
 
 .contact-fill.active {
   animation: 1s circle reverse;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
 }
 
 main.active {
