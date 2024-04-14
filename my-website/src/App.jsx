@@ -26,13 +26,17 @@ function App() {
   return (
     <>
       <main className={`main ${mainAnimation ? " active" : ""}`}>
+        <div id="top" />
         <div className="z-20">
           <StickyContactButton setMainAnimation={setMainAnimation} />
         </div>
         {scrollPosition ? (
-          <button className="flex justify-center items-center z-20 rounded-l fixed right-0 bottom-5 bg-gray-500 bg-opacity-50 h-[5vh] w-[3.5vw]">
+          <a
+            href="#top"
+            className="flex justify-center items-center z-20 rounded-l fixed right-0 bottom-5 bg-gray-500 bg-opacity-50 h-[5vh] w-[3.5vw]"
+          >
             <ChevronUpIcon />
-          </button>
+          </a>
         ) : null}
         <div className="flex justify-center items-center h-[50vh] rounded mb-12">
           <VideoWithOverlay
@@ -46,6 +50,54 @@ function App() {
             textBack={data.textFlip.cardOne.back}
           ></FlipCard>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p>hi</p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p>hi</p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p>hi</p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p>hi</p>
         <br />
         <br />
         <br />
