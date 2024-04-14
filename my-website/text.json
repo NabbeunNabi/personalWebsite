@@ -5,5 +5,48 @@
   },
   "textFlip": {
     "cardOne": { "front": "Mr. Turtlenecks", "back": "is cool" }
+  },
+  "aboutMe": {
+    "youtubeUrl": "https://www.youtube.com/watch?v=lMnKuDn0Z3Q&feature=youtu.be",
+    "nameAndLocation": "My name is Will Brammer. I am originally from the U.S. but am currently living in Japan.",
+    "interests": "In terms of tech, I am interested in Full Stack Development and Dev-Ops. Personally, I love sports (baseball the most) and games.",
+    "workExperience": "I currently work freelance as a Software Engineer to help companies build their tech branches internally and externally. Along with my freelance work, I intern at a multiple companies to work within an AGILE developement environment while learning from industry veterans and mentor newer junior engineers. I am not only a Software Engineer, but tech communicator as I teach beginners the basics of JavaScript for Code Chrysalis."
+  },
+  "workProjects": {
+    "javco": {
+      "companyName": "Javco",
+      "role": "Frontend Developer (Freelance)",
+      "about": "Javco specializes in semi-trailer sales and rentals with a large presence in Wisconsin",
+      "projectDetails": "I led the discovery and research to build a frontend website for the client in order to improve their SEO. Before the project they did not even display on the first page of Google. Now in the U.S. they are listed first when typing their name. I continue to research and revamp the website in order to improve SEO results",
+      "techUsed": "Next.js, Tailwind, Node.js, Vercel"
+    },
+    "daizen": {
+      "companyName": "Daizen",
+      "role": "Full Stack Developer (Freelance)",
+      "about": "Daizen provides tailored logistics solutions depending on your unique requirements.",
+      "projectDetails": "The company which has been more traditional relying on paper for communication, is in a transition of revamping their internal system to be digital. My team is building this system from the ground up, using client requirements and meeting with their manager of this transition to build a user-friendly, streamlined application that can improve employees' lives",
+      "techUsed": "React, Tailwind, JavaScript, Python, Flask, PostgreSQL, Cypress, Heroku, Vercel, Node.js"
+    },
+    "codeChrysalis": {
+      "companyName": "Code Chrysalis",
+      "role": "Technical Instructor",
+      "about": "Code Chrysalis is a coding bootcamp located in downtown Toyko that provides classes to beginners and aspiring Software Engineers",
+      "projectDetails": "I teach and mentor aspiring junior developers in the basics of JavaScript, CSS, and HTML",
+      "techUsed": "JavaScript, HTML, CSS"
+    },
+    "findAdoc": {
+      "companyName": "Find a Doc",
+      "role": "Frontend Developer (Open Source Volunteer)",
+      "about": "Find a Doc is an NPO aimed at helping non native Japanese speakers find a doctor who can communicate to them in their native language. Going to the doctor is always stressful, so whether traveling or living in Japan, Find a Doc can hopefully ease the stress of communciation",
+      "projectDetails": "I work closely with the Tech Lead, Project Manager, and design team to implement new features due to the requirements on each ticket that is tracked on Github issues",
+      "techUsed": "Vue, Tailwind, GraphQL, Cypress, Node.js, Yarn, Pinia"
+    },
+    "sustainabilityPage": {
+      "companyName": "Sustainability Page",
+      "role": "Frontend Developer (Intern)",
+      "about": "Sustainability Page is aimed at assisting companies to make sustainability in their organization the norm, not an afterthought",
+      "projectDetails": "I work with the Product Owner and the Frontend Leads to quickly and efficiently implement UI changes that benefit the user experience in a manner that can be tested using Cypress",
+      "techUsed": "Next.js, Tailwind, Node.js, Yarn"
+    }
   }
 }
