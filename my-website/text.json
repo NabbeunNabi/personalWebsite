@@ -48,5 +48,10 @@
       "projectDetails": "I work with the Product Owner and the Frontend Leads to quickly and efficiently implement UI changes that benefit the user experience in a manner that can be tested using Cypress",
       "techUsed": "Next.js, Tailwind, Node.js, Yarn"
     }
+  },
+  "techPics": {
+    "React": "public/react.svg",
+    "Next": "public/next.svg",
+    "Vue": "public/vue.svg"
   }
 }
