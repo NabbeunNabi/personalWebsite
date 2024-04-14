@@ -50,8 +50,17 @@
     }
   },
   "techPics": {
-    "React": "public/react.svg",
-    "Next": "public/next.svg",
-    "Vue": "public/vue.svg"
+    "Frontend": {
+      "React": "public/react.svg",
+      "Next": "public/next.svg",
+      "Vue": "public/vue.svg",
+      "Tailwind": "public/tailwind.svg",
+      "Cypress": "public/cypress.svg"
+    },
+    "Backend": {
+      "Node": "puble/node.svg",
+      "GraphQL": ""
+    },
+    "Languages": { "JavaScript": "" }
   }
 }
