@@ -1,10 +1,10 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import StickyContactButton from "./components/stickyContactButton/StickyContactButton";
-import FlipCard from "./components/flipcard/FlipCard";
 import VideoWithOverlay from "./components/VideoWithOverlay";
 import { ChevronUpIcon } from "lucide-react";
 import data from "../text.json";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   const [mainAnimation, setMainAnimation] = useState(false);
@@ -27,6 +27,7 @@ function App() {
     <>
       <main className={`main ${mainAnimation ? " active" : ""}`}>
         <div id="top" />
+        <Navbar />
         <div className="z-20">
           <StickyContactButton setMainAnimation={setMainAnimation} />
         </div>
@@ -38,14 +39,12 @@ function App() {
             <ChevronUpIcon />
           </a>
         ) : null}
-        <div className="navbar">{/* <Navbar /> */}</div>
         <div className="flex justify-center items-center h-[50vh] rounded mb-12">
           <VideoWithOverlay
             videoSrc={"/MeAndCocoaLowerRes.mp4"}
             text={data.textVideo}
           />
         </div>
-        <div></div>
       </main>
     </>
   );
