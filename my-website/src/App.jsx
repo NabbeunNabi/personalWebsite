@@ -38,18 +38,14 @@ function App() {
             <ChevronUpIcon />
           </a>
         ) : null}
+        <div className="navbar">{/* <Navbar /> */}</div>
         <div className="flex justify-center items-center h-[50vh] rounded mb-12">
           <VideoWithOverlay
             videoSrc={"/MeAndCocoaLowerRes.mp4"}
             text={data.textVideo}
           />
         </div>
-        <div>
-          <FlipCard
-            textFront={data.textFlip.cardOne.front}
-            textBack={data.textFlip.cardOne.back}
-          ></FlipCard>
-        </div>
+        <div></div>
       </main>
     </>
   );
