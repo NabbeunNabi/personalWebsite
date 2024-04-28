@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Bars3Icon, XCircleIcon } from "@heroicons/react/24/outline";
 
-const Navbar = () => {
+const Navbar = ({ contactOpen }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const pathsForNav = [
@@ -17,17 +17,23 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between h-[10vh] w-full bg-gray-500 text-white">
+      <div
+        className={
+          contactOpen
+            ? "hidden"
+            : "flex items-center justify-between h-[10vh] w-full bg-gray-500 text-white"
+        }
+      >
         <nav className="w-full">
           {/* Navigation */}
           <div className="flex items-center gap-6 md:gap-12">
             {/* Mobile Navigation Toggle (aligned to left) */}
-            <div className="lg:hidden flex items-center ml-4">
+            <div className="lg:hidden flex items-center ml-4 z-50">
               <button onClick={() => setToggleMenu(!toggleMenu)}>
                 {toggleMenu ? (
-                  <XCircleIcon className="h-6 text-black" />
+                  <XCircleIcon className="h-6 text-white fixed top-6 left-40" />
                 ) : (
-                  <Bars3Icon className="h-6 text-black" />
+                  <Bars3Icon className="h-6 text-white" />
                 )}
               </button>
             </div>

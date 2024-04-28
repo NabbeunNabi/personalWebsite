@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { MessageCircleIcon, XCircleIcon } from "lucide-react";
 import "../stickyContactButton/sticky-contact.css";
 
-const StickyContactButton = ({ setMainAnimation }) => {
-  const [contactOpen, setContactOpen] = useState(false);
-
+const StickyContactButton = ({
+  setMainAnimation,
+  contactOpen,
+  setContactOpen,
+}) => {
   function modalOfContact() {
     setContactOpen((prev) => !prev);
   }

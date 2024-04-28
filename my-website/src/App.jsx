@@ -5,10 +5,12 @@ import VideoWithOverlay from "./components/VideoWithOverlay";
 import { ChevronUpIcon } from "lucide-react";
 import data from "../text.json";
 import Navbar from "./components/navbar/Navbar";
+import AboutMe from "./components/about-me/AboutMe";
 
 function App() {
   const [mainAnimation, setMainAnimation] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
 
   const handleScroll = () => {
     setScrollPosition(true);
@@ -27,14 +29,20 @@ function App() {
     <>
       <main className={`main ${mainAnimation ? " active" : ""}`}>
         <div id="top" />
-        <Navbar />
+
+        <Navbar contactOpen={contactOpen} />
+
         <div className="z-20">
-          <StickyContactButton setMainAnimation={setMainAnimation} />
+          <StickyContactButton
+            setMainAnimation={setMainAnimation}
+            setContactOpen={setContactOpen}
+            contactOpen={contactOpen}
+          />
         </div>
         {scrollPosition ? (
           <a
             href="#top"
-            className="flex justify-center items-center z-20 rounded-l fixed right-0 bottom-5 bg-gray-500 bg-opacity-50 h-[5vh] w-[3.5vw]"
+            className="flex justify-center items-center z-20 rounded-l fixed right-0 bottom-5 bg-gray-500 bg-opacity-50 h-[5vh] lg:w-[3.5vw]"
           >
             <ChevronUpIcon />
           </a>
@@ -44,6 +52,9 @@ function App() {
             videoSrc={"/MeAndCocoaLowerRes.mp4"}
             text={data.textVideo}
           />
+        </div>
+        <div id="about" className="flex justify-center">
+          <AboutMe />
         </div>
       </main>
     </>

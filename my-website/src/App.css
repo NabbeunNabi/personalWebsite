@@ -6,10 +6,18 @@
 }
 
 /* Scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+  }
 }
 
+/* Show 10px scrollbar on large screens */
+@media (min-width: 769px) {
+  ::-webkit-scrollbar {
+    width: 10px; /* Show the scrollbar with a 10px width */
+  }
+}
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
