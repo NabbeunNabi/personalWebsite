@@ -16,10 +16,10 @@
       "about": "Javco specializes in semi-trailer sales and rentals with a large presence in Wisconsin",
       "projectDetails": "I led the discovery and research to build a frontend website for the client in order to improve their SEO. Before the project they did not even display on the first page of Google. Now in the U.S. they are listed first when typing their name. Currently, I am adding CMS for the customer so they can update their inventory. I continue to research and revamp the website in order to improve SEO results",
       "techUsed": {
-        "Next.js": "/next.png",
-        "Tailwind": "/tailwind.png",
-        "Node.js": "/node.png",
-        "Vercel": "/vercel.png"
+        "Next.js": "/next.svg",
+        "Tailwind": "/tailwind.svg",
+        "Node.js": "/node.svg",
+        "Vercel": "/vercel.svg"
       }
     },
     "daizen": {
