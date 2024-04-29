@@ -39,7 +39,6 @@
         "PostgreSQL": "/postgresql.svg",
         "Cypress": "/cypress.svg",
         "Heroku": "/heroku.svg",
-        "Vercel": "/vercel.svg",
         "Node.js": "/node.svg"
       }
     },
