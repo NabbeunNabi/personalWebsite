@@ -35,10 +35,14 @@ const FlipCard = ({ textForCard, imgSource }) => {
               </div>
             </div>
             <button className="fixed bottom-2 px-6 py-2 opacity-70 bg-blue-500 text-white rounded-full hover:bg-blue-700 transition duration-300">
-              <span className="block lg:hidden">Tap for more info</span>{" "}
-              {/* Small screens */}
-              <span className="hidden lg:block">Hover for more info</span>{" "}
-              {/* Large screens */}
+              {showFront && (
+                <>
+                  {/* Small screens */}
+                  <span className="block lg:hidden">Tap for more info</span>
+                  {/* Large screens */}
+                  <span className="hidden lg:block">Hover for more info</span>
+                </>
+              )}
             </button>
           </div>
           <div
