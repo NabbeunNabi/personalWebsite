@@ -1,4 +1,4 @@
-import data from "../../../text.json";
+import data from "../../text.json";
 
 const AboutMe = () => {
   return (
