@@ -106,3 +106,10 @@ main.active {
     background-color: rgba(224, 242, 254, 0);
   }
 }
+
+.img-tech-zoom {
+  overflow: hidden;
+}
+.img-tech-zoom:hover {
+  transform: scale(2.75);
+}

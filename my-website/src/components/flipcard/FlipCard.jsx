@@ -24,7 +24,7 @@ const FlipCard = ({ textForCard, imgSource }) => {
             <div className="flex justify-center items-center w-full h-2/5  md:h-full bg-white">
               <img src={imgSource} className="h-auto max-h-full" />
             </div>
-            <div className="flex flex-col text-white justify-center items-center p-6 md:justify-start h-2/5 w-full">
+            <div className="flex flex-col text-white justify-center items-center p-8 md:justify-start h-2/5 w-full">
               <h1 className="font-bold text-start">
                 Company: {textForCard.companyName}
               </h1>
@@ -52,17 +52,18 @@ const FlipCard = ({ textForCard, imgSource }) => {
             <div className="proj-details flex flex-col p-4 text-black justify-center items-center h-2/5 md:h-full w-full">
               <h1 className="font-bold underline p-2">Tech Used</h1>
 
-              <p className="flex flex-row justify-around p-2 text-start p-2 w-full overflow-scroll md:overflow-auto ">
+              <p className="flex flex-wrap justify-around items-center p-2 text-start p-2 w-full overflow-scroll md:overflow-auto ">
                 {Object.entries(textForCard.techUsed).map((entry, index) => (
                   <span
-                    className="flex text-black items-center space-x-2"
+                    className="flex justify-center mt-1 text-black items-center space-x-2"
                     key={index}
+                    style={{ flex: "0 0 33.333%" }}
                   >
                     {/* <span className="text-lg font-medium">-{entry[0]}: </span> */}
                     <img
                       src={entry[1]}
                       alt={entry[0]}
-                      className="w-6 h-6 rounded-full"
+                      className="img-tech-zoom w-6 h-6 rounded-full"
                     />
                   </span>
                 ))}

@@ -8,6 +8,8 @@ import Navbar from "./components/navbar/Navbar";
 import AboutMe from "./components/about-me/AboutMe";
 import ContactFooter from "./components/contact-footer/ContactFooter";
 import WorkExperience from "./components/WorkExperience";
+import Contributions from "./components/Contributions";
+import TechKnown from "./components/TechKnown";
 
 function App() {
   const [mainAnimation, setMainAnimation] = useState(false);
@@ -60,6 +62,13 @@ function App() {
         </div>
         <div id="work-exp" className="flex justify-center">
           <WorkExperience />
+        </div>
+
+        <div id="contributions" className="flex justify-center">
+          <Contributions />
+        </div>
+        <div id="skills" className="flex justify-center">
+          <TechKnown />
         </div>
         <div className="flex justify-center">
           <ContactFooter />
