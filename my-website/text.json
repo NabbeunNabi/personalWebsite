@@ -97,6 +97,7 @@
       "Pinia": "/pinia.svg"
     },
     "BackendAndDB": {
+      "Django": "/django.svg",
       "Node": "/node.svg",
       "Yarn": "/yarn.svg",
       "Express": "/express.svg",
