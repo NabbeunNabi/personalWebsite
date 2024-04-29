@@ -53,8 +53,8 @@ const Navbar = ({ contactOpen }) => {
         <div
           onBlur={handleBlur}
           onMouseLeave={handleBlur}
-          className={`fixed z-20 p-2 bg-gray-500 overflow-hidden flex flex-col lg:hidden gap-8 top-0 left-0 ${
-            toggleMenu ? "w-auto h-auto" : "w-0 h-0"
+          className={`z-20 p-2 bg-gray-500 overflow-hidden flex flex-col lg:hidden gap-8 top-0 left-0 ${
+            toggleMenu ? "w-auto h-auto fixed" : "hidden w-0 h-0"
           }`}
         >
           <div className="mt-4 px-8 flex flex-col items-start text-start gap-8 font-bold tracking-wider">
