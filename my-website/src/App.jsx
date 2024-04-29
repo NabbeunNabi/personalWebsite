@@ -6,6 +6,8 @@ import { ChevronUpIcon } from "lucide-react";
 import data from "../text.json";
 import Navbar from "./components/navbar/Navbar";
 import AboutMe from "./components/about-me/AboutMe";
+import ContactFooter from "./components/contact-footer/ContactFooter";
+import WorkExperience from "./components/WorkExperience";
 
 function App() {
   const [mainAnimation, setMainAnimation] = useState(false);
@@ -27,7 +29,7 @@ function App() {
 
   return (
     <>
-      <main className={`main ${mainAnimation ? " active" : ""}`}>
+      <main className={`main  ${mainAnimation ? " active" : ""}`}>
         <div id="top" />
 
         <Navbar contactOpen={contactOpen} />
@@ -55,6 +57,12 @@ function App() {
         </div>
         <div id="about" className="flex justify-center">
           <AboutMe />
+        </div>
+        <div id="work-exp" className="flex justify-center">
+          <WorkExperience />
+        </div>
+        <div className="flex justify-center">
+          <ContactFooter />
         </div>
       </main>
     </>

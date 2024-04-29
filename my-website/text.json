@@ -3,22 +3,24 @@
     "videoOverlay": "Will Brammer",
     "videoOverlaySubtext": "Software Engineer"
   },
-  "textFlip": {
-    "cardOne": { "front": "Mr. Turtlenecks", "back": "is cool" }
-  },
   "aboutMe": {
     "youtubeUrl": "https://www.youtube.com/watch?v=lMnKuDn0Z3Q&feature=youtu.be",
-    "nameAndLocation": "My name is Will Brammer. I am originally from the U.S. but am currently living in Japan.",
-    "interests": "In terms of tech, all of it excites me. There are endless possibilities for learning and creativity. Personally, I love sports (baseball the most) and games.",
-    "workExperience": "I currently work freelance as a Software Engineer to help companies build their tech branches internally and externally. Along with my freelance work, I intern at a multiple companies to work within an AGILE developement environment while learning from industry veterans and mentor newer junior engineers. I am not only a Software Engineer, but tech communicator as I teach beginners the basics of JavaScript for Code Chrysalis."
+    "nameAndLocation": "My name is Will Brammer. I am originally from the U.S., but am currently living in Japan.",
+    "interests": "When it comes to what I am interested in, I think it is impossible for me to list it all here. So a very short synopsis would be that in terms of tech, all of it excites and interests me. There are endless possibilities for learning and creativity. Personally, I love sports (baseball the most) and games.",
+    "workExperience": "I currently work freelance as a Software Engineer to help companies build their tech branches internally and externally. Along with my freelance work, I intern at a multiple companies work within an AGILE developement environments while learning from industry veterans and mentor newer junior engineers. I am not only a Software Engineer, but tech communicator as I teach beginners the basics of JavaScript for Code Chrysalis."
   },
   "workProjects": {
     "javco": {
       "companyName": "Javco",
-      "role": "Frontend Developer (Freelance)",
+      "role": "Full Stack Engineer (Freelance)",
       "about": "Javco specializes in semi-trailer sales and rentals with a large presence in Wisconsin",
-      "projectDetails": "I led the discovery and research to build a frontend website for the client in order to improve their SEO. Before the project they did not even display on the first page of Google. Now in the U.S. they are listed first when typing their name. I continue to research and revamp the website in order to improve SEO results",
-      "techUsed": "Next.js, Tailwind, Node.js, Vercel"
+      "projectDetails": "I led the discovery and research to build a frontend website for the client in order to improve their SEO. Before the project they did not even display on the first page of Google. Now in the U.S. they are listed first when typing their name. Currently, I am adding CMS for the customer so they can update their inventory. I continue to research and revamp the website in order to improve SEO results",
+      "techUsed": {
+        "Next.js": "/public/next.svg",
+        "Tailwind": "public/tailwind.svg",
+        "Node.js": "public/node.svg",
+        "Vercel": "public/vercel.svg"
+      }
     },
     "daizen": {
       "companyName": "Daizen",

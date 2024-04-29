@@ -45,8 +45,8 @@ const StickyContactButton = ({
           </div>
           <a
             href="https://github.com/NabbeunNabi"
-            className="button-fill-l-to-r flex items-center justify-center mb-4 h-2/5 w-4/5 rounded-full"
             target="_blank"
+            className="button-fill-l-to-r flex items-center justify-center mb-4 h-2/5 w-4/5 rounded-full"
           >
             <img
               src="/github.svg"
