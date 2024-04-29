@@ -24,8 +24,8 @@ const FlipCard = ({ textForCard, imgSource }) => {
             <div className="flex justify-center items-center w-full h-2/5  md:h-full bg-white">
               <img src={imgSource} className="h-auto max-h-full" />
             </div>
-            <div className="flex flex-col text-white justify-center items-center md:justify-start h-2/5 w-full">
-              <h1 className="font-bold text-start mt-2">
+            <div className="flex flex-col text-white justify-center items-center p-6 md:justify-start h-2/5 w-full">
+              <h1 className="font-bold text-start">
                 Company: {textForCard.companyName}
               </h1>
               <h2 className="font-semibold">Position: {textForCard.role}</h2>
