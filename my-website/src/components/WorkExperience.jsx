@@ -14,6 +14,10 @@ const WorkExperience = () => {
           textForCard={data.workProjects.daizen}
           imgSource="/daizen.svg"
         />
+        <FlipCard
+          textForCard={data.workProjects.codeChrysalis}
+          imgSource="/codechrysalis.png"
+        />
       </div>
     </div>
   );

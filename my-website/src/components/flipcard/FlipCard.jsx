@@ -19,12 +19,12 @@ const FlipCard = ({ textForCard, imgSource }) => {
         >
           <div
             onMouseEnter={window.innerWidth >= 1024 ? handleClick : null}
-            className="card-front flex flex-col justify-center md:flex-row bg-blue-600"
+            className="card-front flex flex-col justify-start md:flex-row bg-blue-600"
           >
             <div className="flex justify-center items-center w-full h-2/5  md:h-full bg-white">
               <img src={imgSource} className="h-auto max-h-full" />
             </div>
-            <div className="flex flex-col text-white justify-start items-center h-2/5 w-full">
+            <div className="flex flex-col text-white justify-center items-center md:justify-start h-2/5 w-full">
               <h1 className="font-bold text-start mt-2">
                 Company: {textForCard.companyName}
               </h1>
@@ -34,7 +34,7 @@ const FlipCard = ({ textForCard, imgSource }) => {
                 <p>- {textForCard.about}</p>
               </div>
             </div>
-            <button className="fixed bottom-2 px-6 py-2 opacity-70 bg-blue-500 text-white rounded-full hover:bg-blue-700">
+            <button className="fixed md:left-2 bottom-2 px-6 py-2 opacity-70 bg-blue-500 text-white rounded-full hover:bg-blue-700">
               {showFront && (
                 <>
                   {/* Small screens */}

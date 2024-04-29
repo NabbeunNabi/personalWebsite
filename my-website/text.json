@@ -30,7 +30,7 @@
       "techUsed": {
         "React": "/react.svg",
         "Tailwind": "/tailwind.svg",
-        "JavaScript": "/javascript.svg",
+        "TypeScript": "/typescript.svg",
         "Python": "/python.svg",
         "Flask": "/flask.svg",
         "PostgreSQL": "/postgresql.svg",
@@ -45,7 +45,11 @@
       "role": "Technical Instructor",
       "about": "Code Chrysalis is a coding bootcamp located in downtown Toyko that provides classes to beginners and aspiring Software Engineers",
       "projectDetails": "I teach and mentor aspiring junior developers in the basics of JavaScript, CSS, and HTML",
-      "techUsed": "JavaScript, HTML, CSS"
+      "techUsed": {
+        "JavaScript": "/javascript.svg",
+        "HTML": "/html5.svg",
+        "CSS": "/css3.svg"
+      }
     },
     "findAdoc": {
       "companyName": "Find a Doc",
