@@ -111,5 +111,6 @@ main.active {
   overflow: hidden;
 }
 .img-tech-zoom:hover {
+  z-index: 100;
   transform: scale(2.75);
 }

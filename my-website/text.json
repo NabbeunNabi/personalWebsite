@@ -88,16 +88,37 @@
   },
   "techPics": {
     "Frontend": {
-      "React": "public/react.svg",
-      "Next": "public/next.svg",
-      "Vue": "public/vue.svg",
-      "Tailwind": "public/tailwind.svg",
-      "Cypress": "public/cypress.svg"
+      "React": "/react.svg",
+      "Next": "/next.svg",
+      "Vue": "/vue.svg",
+      "HTML": "/html5.svg",
+      "CSS": "/css3.svg",
+      "Tailwind": "/tailwind.svg",
+      "Pinia": "/pinia.svg"
     },
-    "Backend": {
-      "Node": "puble/node.svg",
-      "GraphQL": ""
+    "BackendAndDB": {
+      "Node": "/node.svg",
+      "Yarn": "/yarn.svg",
+      "Express": "/express.svg",
+      "GraphQL": "/graphql.svg",
+      "PostgreSQL": "/postgresql.svg",
+      "MongoDB": "/mongodb.svg",
+      "Prisma": "/prisma.svg",
+      "Knex": "/knex.svg"
     },
-    "Languages": { "JavaScript": "" }
+    "Languages": {
+      "JavaScript": "/javascript.svg",
+      "TypeScript": "/typescript.svg",
+      "Python": "/python.svg"
+    },
+    "TestingAndDeployment": {
+      "Heroku": "/heroku.svg",
+      "Vercel": "/vercel.svg",
+      "Render": "/render.svg",
+      "Pytest": "/pytest.svg",
+      "Cypress": "/cypress.svg",
+      "Github": "/github.svg",
+      "Git": "/git.svg"
+    }
   }
 }
