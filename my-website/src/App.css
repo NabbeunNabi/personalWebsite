@@ -7,7 +7,7 @@
 
 /* Scrollbar */
 @media (max-width: 768px) {
-  ::-webkit-scrollbar {
+  html ::-webkit-scrollbar {
     display: none; /* Hides the scrollbar */
   }
 }
@@ -18,6 +18,32 @@
     width: 10px; /* Show the scrollbar with a 10px width */
   }
 }
+
+/* scrollbar for small query certain classes*/
+
+@media (max-width: 768px) {
+  .proj-details ::-webkit-scrollbar {
+    display: auto; /* Show the scrollbar */
+    width: 10px; /* Set the width of the scrollbar */
+  }
+
+  /* Track */
+  .proj-details ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  .proj-details ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #888;
+  }
+
+  /* Handle on hover */
+  .proj-details ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;

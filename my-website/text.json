@@ -27,7 +27,18 @@
       "role": "Full Stack Developer (Freelance)",
       "about": "Daizen provides tailored logistics solutions depending on your unique requirements.",
       "projectDetails": "The company which has been more traditional relying on paper for communication, is in a transition of revamping their internal system to be digital. My team is building this system from the ground up, using client requirements and meeting with their manager of this transition to build a user-friendly, streamlined application that can improve employees' lives",
-      "techUsed": "React, Tailwind, JavaScript, Python, Flask, PostgreSQL, Cypress, Heroku, Vercel, Node.js"
+      "techUsed": {
+        "React": "/react.svg",
+        "Tailwind": "/tailwind.svg",
+        "JavaScript": "/javascript.svg",
+        "Python": "/python.svg",
+        "Flask": "/flask.svg",
+        "PostgreSQL": "/postgresql.svg",
+        "Cypress": "/cypress.svg",
+        "Heroku": "/heroku.svg",
+        "Vercel": "/vercel.svg",
+        "Node.js": "/node.svg"
+      }
     },
     "codeChrysalis": {
       "companyName": "Code Chrysalis",

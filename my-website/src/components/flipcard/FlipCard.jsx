@@ -18,13 +18,13 @@ const FlipCard = ({ textForCard, imgSource }) => {
           onClick={handleClick}
         >
           <div
-            onMouseEnter={handleClick}
-            className="card-front flex flex-col md:flex-row bg-blue-600"
+            onMouseEnter={window.innerWidth >= 1024 ? handleClick : null}
+            className="card-front flex flex-col justify-center md:flex-row bg-blue-600"
           >
-            <div className="flex justify-center items-center h-full w-full  bg-white">
-              <img src={imgSource} className="object-cover" />
+            <div className="flex justify-center items-center w-full h-2/5  md:h-full bg-white">
+              <img src={imgSource} className="h-auto max-h-full" />
             </div>
-            <div className="flex flex-col text-white justify-start items-center h-full w-full">
+            <div className="flex flex-col text-white justify-start items-center h-2/5 w-full">
               <h1 className="font-bold text-start mt-2">
                 Company: {textForCard.companyName}
               </h1>
@@ -42,28 +42,27 @@ const FlipCard = ({ textForCard, imgSource }) => {
             </button>
           </div>
           <div
-            onMouseLeave={handleClick}
+            onMouseLeave={window.innerWidth >= 1024 ? handleClick : null}
             className="card-back flex flex-col md:flex-row bg-sky-100"
           >
-            <div className="flex justify-center items-center w-full h-3/5 bg-white md:w-2/5 md:h-full">
-              <div className="flex flex-col items-start space-y-2">
-                <h1 className="font-bold underline">Tech Used</h1>
-                <ul className="list-disc">
-                  {Object.entries(textForCard.techUsed).map((entry, index) => (
-                    <li
-                      className="flex text-black items-center space-x-2"
-                      key={index}
-                    >
-                      <span className="text-lg font-medium">-{entry[0]}: </span>
-                      <img
-                        src={entry[1]}
-                        alt={entry[0]}
-                        className="w-6 h-6 rounded-full"
-                      />
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <div className="proj-details flex flex-col p-4 text-black justify-center items-center h-2/5 md:h-full w-full">
+              <h1 className="font-bold underline p-2">Tech Used</h1>
+
+              <p className=" text-start p-2 overflow-scroll md:overflow-auto ">
+                {Object.entries(textForCard.techUsed).map((entry, index) => (
+                  <span
+                    className="flex text-black items-center space-x-2"
+                    key={index}
+                  >
+                    <span className="text-lg font-medium">-{entry[0]}: </span>
+                    <img
+                      src={entry[1]}
+                      alt={entry[0]}
+                      className="w-6 h-6 rounded-full"
+                    />
+                  </span>
+                ))}
+              </p>
             </div>
 
             <div className="flex flex-col p-2 text-black justify-start items-center h-2/5 md:h-full w-full">
