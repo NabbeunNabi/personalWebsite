@@ -34,7 +34,7 @@ const FlipCard = ({ textForCard, imgSource }) => {
                 <p>- {textForCard.about}</p>
               </div>
             </div>
-            <button className="fixed bottom-2 px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-700 transition duration-300">
+            <button className="fixed bottom-2 px-6 py-2 opacity-70 bg-blue-500 text-white rounded-full hover:bg-blue-700 transition duration-300">
               <span className="block lg:hidden">Tap for more info</span>{" "}
               {/* Small screens */}
               <span className="hidden lg:block">Hover for more info</span>{" "}
@@ -45,7 +45,7 @@ const FlipCard = ({ textForCard, imgSource }) => {
             onMouseLeave={handleClick}
             className="card-back flex flex-col md:flex-row bg-sky-100"
           >
-            <div className="flex justify-center items-center w-full h-full bg-white md:w-2/5">
+            <div className="flex justify-center items-center w-full h-3/5 bg-white md:w-2/5 md:h-full">
               <div className="flex flex-col items-start space-y-2">
                 <h1 className="font-bold underline">Tech Used</h1>
                 <ul className="list-disc">
@@ -66,10 +66,12 @@ const FlipCard = ({ textForCard, imgSource }) => {
               </div>
             </div>
 
-            <div className="flex flex-col p-2 text-black justify-start items-center h-full w-full">
+            <div className="flex flex-col p-2 text-black justify-start items-center h-2/5 md:h-full w-full">
               <h1 className="font-bold text-start mt-2">Project Details:</h1>
 
-              <p className="text-start p-2">- {textForCard.projectDetails}</p>
+              <p className="text-start p-2 overflow-scroll md:overflow-auto">
+                - {textForCard.projectDetails}
+              </p>
             </div>
           </div>
         </div>

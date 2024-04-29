@@ -2,7 +2,7 @@ import { GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
 
 const ContactFooter = () => {
   return (
-    <div className="flex flex-col w-4/5 mt-4  p-2 items-center justify-between md:flex-row border-t border-l border-r border-gray-200 shadow-lg shadow-gray-500">
+    <div className="flex flex-col w-4/5 mt-4  p-2 items-center justify-around md:flex-row border-t border-l border-r border-gray-200 shadow-lg shadow-gray-500">
       <button className="font-bold p-2 md:ml-4">
         <a
           className="flex flex-row"
