@@ -31,7 +31,7 @@ const FlipCard = ({ textForCard, imgSource }) => {
               <h2 className="font-semibold">Position: {textForCard.role}</h2>
               <div className="flex flex-col p-2 text-white justify-center items-center h-3/5 md:h-full w-full">
                 <h3 className="text-center underline">About the company</h3>
-                <p className="text-start text-sm md:text-base p-2">
+                <p className="text-start text-xs md:text-base p-2">
                   - {textForCard.about}
                 </p>
               </div>
@@ -75,7 +75,7 @@ const FlipCard = ({ textForCard, imgSource }) => {
             <div className="flex flex-col p-2 text-black justify-center items-center h-2/5 md:h-full w-full">
               <h1 className="font-bold text-start mt-2">Project Details:</h1>
 
-              <p className="text-start p-2 text-sm md:text-base overflow-scroll md:overflow-auto">
+              <p className="text-start p-2 text-xs md:text-base overflow-scroll md:overflow-auto">
                 - {textForCard.projectDetails}
               </p>
             </div>
