@@ -29,12 +29,14 @@ const FlipCard = ({ textForCard, imgSource }) => {
                 Company: {textForCard.companyName}
               </h1>
               <h2 className="font-semibold">Position: {textForCard.role}</h2>
-              <div className="text-start p-2">
+              <div className="flex flex-col p-2 text-white justify-center items-center h-3/5 md:h-full w-full">
                 <h3 className="text-center underline">About the company</h3>
-                <p>- {textForCard.about}</p>
+                <p className="text-start p-2 overflow-scroll md:overflow-auto">
+                  - {textForCard.about}
+                </p>
               </div>
             </div>
-            <button className="fixed md:left-2 bottom-2 px-6 py-2 opacity-70 bg-blue-500 text-white rounded-full hover:bg-blue-700">
+            <button className="fixed md:left-2 top-2 px-6 py-2 opacity-70 bg-blue-500 text-white rounded-full hover:bg-blue-700">
               {showFront && (
                 <>
                   {/* Small screens */}

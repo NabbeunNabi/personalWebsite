@@ -68,6 +68,8 @@ const VideoWithOverlay = ({ videoSrc, text, imageSrc }) => {
         <FadeInImage
           src={"/high-res-will.jpg"}
           alt={"Picture of Will Brammer in a professional photo"}
+          sizes="(max-width: 600px) 100vw, 50vw"
+          srcSet="/high-res-will.jpg 1024w, /medium-res-will.jpg 640w, /low-res-will.jpg 320w"
         />
       )}
       <div
