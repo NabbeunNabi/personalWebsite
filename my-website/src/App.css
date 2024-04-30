@@ -118,3 +118,13 @@ main.active {
   z-index: 100;
   transform: scale(2.75);
 } */
+
+/* CSS for fade-in effect */
+.fade-in {
+  opacity: 0; /* Initial state: completely transparent */
+  transition: opacity 3s;
+}
+
+.fade-in.visible {
+  opacity: 1; /* Visible state: fully opaque */
+}

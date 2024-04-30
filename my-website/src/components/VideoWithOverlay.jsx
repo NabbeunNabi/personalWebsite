@@ -57,15 +57,9 @@ const VideoWithOverlay = ({ videoSrc, text, imageSrc }) => {
   }, [videoRef]);
 
   return (
-    <div className="relative w-full h-full bg-gray-500">
+    <div className="relative flex justify-center items-center w-full h-full bg-gray-500">
       {!isVideoEnded ? (
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          playsInline
-          className="w-full h-full"
-        >
+        <video ref={videoRef} autoPlay muted playsInline className=" h-full">
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -73,7 +67,7 @@ const VideoWithOverlay = ({ videoSrc, text, imageSrc }) => {
         <img
           src="/high-res-will.jpg"
           alt="High-resolution image of Will Brammer"
-          className="w-full h-full"
+          className="fade-n h-full"
         />
       )}
       <div

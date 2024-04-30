@@ -1,7 +1,6 @@
 import React from "react";
 
 const StaticCardForTech = ({ typeOfTech, arrayOfTechImages }) => {
-  console.log(arrayOfTechImages);
   return (
     <>
       <div className="border-4 rounded-lg shadow-lg shadow-gray-500 p-2 m-4 w-4/5 ">

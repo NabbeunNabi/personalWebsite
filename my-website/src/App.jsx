@@ -53,7 +53,7 @@ function App() {
         ) : null}
         <div className="flex justify-center items-center h-[50vh] rounded mb-12">
           <VideoWithOverlay
-            videoSrc={"/MeAndCocoaLowerRes.mp4"}
+            videoSrc={"/CocoaWithoutMe.mp4"}
             text={data.textVideo}
           />
         </div>
