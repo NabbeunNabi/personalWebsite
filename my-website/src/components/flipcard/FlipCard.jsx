@@ -70,7 +70,7 @@ const FlipCard = ({ textForCard, imgSource }) => {
               </p>
             </div>
 
-            <div className="flex flex-col p-2 text-black justify-start items-center h-2/5 md:h-full w-full">
+            <div className="flex flex-col p-2 text-black justify-center items-center h-2/5 md:h-full w-full">
               <h1 className="font-bold text-start mt-2">Project Details:</h1>
 
               <p className="text-start p-2 overflow-scroll md:overflow-auto">
