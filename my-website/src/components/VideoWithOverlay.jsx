@@ -71,8 +71,8 @@ const VideoWithOverlay = ({ videoSrc, text, imageSrc }) => {
         </video>
       ) : (
         <img
-          src={imageSrc}
-          alt="High-resolution image"
+          src="/high-res-will.jpg"
+          alt="High-resolution image of Will Brammer"
           className="w-full h-full"
         />
       )}
