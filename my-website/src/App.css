@@ -119,12 +119,45 @@ main.active {
   transform: scale(2.75);
 } */
 
-/* CSS for fade-in effect */
+/* Fade-in effect for loaded content */
 .fade-in {
-  opacity: 0; /* Initial state: completely transparent */
-  transition: opacity 3s;
+  opacity: 0.01; /* Default initial opacity */
+  transition: opacity 0.575s cubic-bezier(0.86, 0, 0.07, 1); /* Fade-in transition */
+  height: 100%; /* Full height */
 }
 
-.fade-in.visible {
-  opacity: 1; /* Visible state: fully opaque */
+.fade-in.is-loaded {
+  opacity: 1; /* Fully visible when loaded */
+}
+
+/* Style for image wrapper */
+.image-wrapper {
+  height: 100%; /* Full height */
+  background: rgba(
+    11,
+    14,
+    21,
+    0.6
+  ); /* Default background with slight opacity */
+}
+
+/* Conditional styling for loaded image wrapper */
+.image-wrapper.is-loaded {
+  background: rgba(11, 14, 21, 1); /* Solid background when loaded */
+}
+
+/* Loading animation for non-loaded state */
+@keyframes fade {
+  from {
+    opacity: 0.4; /* Start with partial opacity */
+  }
+  to {
+    opacity: 0.6; /* Increase opacity */
+  }
+}
+
+.loading {
+  background: rgb(11, 14, 21); /* Base background color */
+  opacity: 0.6; /* Initial opacity */
+  animation: fade 0.625s steps(8, end) infinite alternate; /* Animation with alternating opacity */
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import FadeInImage from "./fade-in-image/FadeInImage";
 
 const VideoWithOverlay = ({ videoSrc, text, imageSrc }) => {
   const [typedText, setTypedText] = useState("");
@@ -64,10 +65,9 @@ const VideoWithOverlay = ({ videoSrc, text, imageSrc }) => {
           Your browser does not support the video tag.
         </video>
       ) : (
-        <img
-          src="/high-res-will.jpg"
-          alt="High-resolution image of Will Brammer"
-          className="fade-n h-full"
+        <FadeInImage
+          src={"/high-res-will.jpg"}
+          alt={"Picture of Will Brammer in a professional photo"}
         />
       )}
       <div
