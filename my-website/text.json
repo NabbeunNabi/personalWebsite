@@ -1,13 +1,13 @@
 {
   "textVideo": {
     "videoOverlay": "Will Brammer",
-    "videoOverlaySubtext": "Software Engineer, baseball enthusiast, gamer"
+    "videoOverlaySubtext": "Software Engineer | Baseball Enthusiast | Gamer"
   },
   "aboutMe": {
     "youtubeUrl": "https://www.youtube.com/watch?v=lMnKuDn0Z3Q&feature=youtu.be",
     "nameAndLocation": "My name is Will Brammer. I am originally from the U.S., but am currently living in Japan.",
     "interests": "When it comes to what I am interested in, I think it is impossible for me to list it all here. So a very short synopsis would be that in terms of tech, all of it excites and interests me. There are endless possibilities for learning and creativity. Personally, I love sports (baseball the most) and games.",
-    "workExperience": "I currently work freelance as a Software Engineer to help companies build their tech branches internally and externally. Along with my freelance work, I intern at a multiple companies that work within an AGILE developement environment, while learning from industry veterans and mentor newer junior engineers. I am not only a Software Engineer, but tech communicator as I teach beginners the basics of JavaScript for Code Chrysalis."
+    "workExperience": "I currently work freelance as a Software Engineer to help companies build their tech branches internally and externally. Along with my freelance work, I intern at multiple companies that work within an AGILE developement environment, while learning from industry veterans and mentor newer junior engineers. I am not only a Software Engineer, but tech communicator as I teach beginners the basics of JavaScript for Code Chrysalis."
   },
   "workProjects": {
     "javco": {
