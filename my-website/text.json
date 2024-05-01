@@ -112,6 +112,7 @@
       "Python": "/python.svg"
     },
     "TestingAndDeployment": {
+      "Fly.io": "/flyio.svg",
       "Heroku": "/heroku.svg",
       "Vercel": "/vercel.svg",
       "Render": "/render.svg",
