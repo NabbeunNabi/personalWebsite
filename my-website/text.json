@@ -55,7 +55,7 @@
     },
     "findAdoc": {
       "companyName": "Find a Doc",
-      "role": "Frontend Developer (Open Source Volunteer)",
+      "role": "Frontend Developer (Freelance)",
       "about": "Find a Doc is an NPO aimed at helping non native Japanese speakers find a doctor who can communicate to them in their native language.",
       "projectDetails": "Going to the doctor is always stressful, so whether traveling or living in Japan, Find a Doc can hopefully ease the stress of communciation. I work closely with the Tech Lead, Project Manager, and design team to implement new features due to the requirements on each ticket that is tracked on Github issues.",
       "techUsed": {
@@ -67,6 +67,16 @@
         "Node.js": "/node.svg",
         "Yarn": "/yarn.svg",
         "Pinia": "/pinia.svg"
+      }
+    },
+    "expressAi": {
+      "companyName": "Xpress AI",
+      "role": "Frontend Developer (Freelance)",
+      "about": "Xpress AI, is a company that allows you to use comprehensive APIs to easily add tailored Ai functionality to an application.",
+      "projectDetails": "Using the technology of Xpress Ai, I built a frontend that would show POC to investors that Xpress AI was the right fit moving forward to save thousands of dollars and reduce the waste of fast fashion",
+      "techUsed": {
+        "Svelte": "/svelte.svg",
+        "Tailwind": "/tailwind.svg"
       }
     },
     "sustainabilityPage": {
@@ -89,6 +99,7 @@
     "Frontend": {
       "React": "/react.svg",
       "Next": "/next.svg",
+      "Svelte": "/svelte.svg",
       "Vue": "/vue.svg",
       "HTML": "/html5.svg",
       "CSS": "/css3.svg",

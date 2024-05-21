@@ -10,10 +10,6 @@ const Contributions = () => {
       </h1>
 
       <FlipCard
-        textForCard={data.workProjects.findAdoc}
-        imgSource="/findadoc.svg"
-      />
-      <FlipCard
         textForCard={data.workProjects.sustainabilityPage}
         imgSource="/sustainabilityPageLogo.svg"
       />

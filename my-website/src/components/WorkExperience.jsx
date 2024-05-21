@@ -15,6 +15,14 @@ const WorkExperience = () => {
           imgSource="/daizen.png"
         />
         <FlipCard
+          textForCard={data.workProjects.findAdoc}
+          imgSource="/findadoc.svg"
+        />
+        <FlipCard
+          textForCard={data.workProjects.expressAi}
+          imgSource="/expressai.svg"
+        />
+        <FlipCard
           textForCard={data.workProjects.codeChrysalis}
           imgSource="/codechrysalis.png"
         />
