@@ -12,7 +12,7 @@
   "workProjects": {
     "javco": {
       "companyName": "Javco",
-      "role": "Full Stack Engineer (Freelance)",
+      "role": "Full Stack Engineer",
       "about": "Javco specializes in semi-trailer sales and rentals with a large presence in Wisconsin.",
       "projectDetails": "I led the discovery and research to build a frontend website for the client in order to improve their SEO. Before the project they did not even display on the first page of Google. Now in the U.S. they are listed first when typing their name. Currently, I am adding CMS for the customer so they can update their inventory. I continue to research and revamp the website in order to improve SEO results.",
       "techUsed": {
@@ -27,7 +27,7 @@
     },
     "daizen": {
       "companyName": "Daizen",
-      "role": "Full Stack Developer (Freelance)",
+      "role": "Full Stack Developer",
       "about": "Daizen provides tailored logistics solutions depending on your unique requirements.",
       "projectDetails": "The company which has been more traditional relying on paper for communication, is in a transition of revamping their internal system to be digital. My team is building this system from the ground up, using client requirements and meeting with their manager of this transition to build a user-friendly, streamlined application that can improve employees' lives.",
       "techUsed": {
@@ -46,7 +46,7 @@
       "companyName": "Code Chrysalis",
       "role": "Technical Instructor",
       "about": "Code Chrysalis is a coding bootcamp located in downtown Toyko that provides classes to beginners and aspiring Software Engineers.",
-      "projectDetails": "I teach and mentor aspiring junior developers in the basics of JavaScript, CSS, and HTML.",
+      "projectDetails": "I teach and mentor aspiring junior developers to go from no stack to full stack",
       "techUsed": {
         "JavaScript": "/javascript.svg",
         "HTML": "/html5.svg",
@@ -55,9 +55,9 @@
     },
     "findAdoc": {
       "companyName": "Find a Doc",
-      "role": "Frontend Developer (Freelance)",
+      "role": "Software Engineer/ Board Memeber",
       "about": "Find a Doc is an NPO aimed at helping non native Japanese speakers find a doctor who can communicate to them in their native language.",
-      "projectDetails": "Going to the doctor is always stressful, so whether traveling or living in Japan, Find a Doc can hopefully ease the stress of communciation. I work closely with the Tech Lead, Project Manager, and design team to implement new features due to the requirements on each ticket that is tracked on Github issues.",
+      "projectDetails": "Going to the doctor is always stressful, so whether traveling or living in Japan, Find a Doc can hopefully ease the stress of communciation. I work closely with the Tech Lead, Project Manager, and design team to implement new features while leading the creation of the moderation panel to help our organization grow.",
       "techUsed": {
         "Vue": "/vue.svg",
         "TypeScript": "/typescript.svg",
@@ -77,21 +77,6 @@
       "techUsed": {
         "Svelte": "/svelte.svg",
         "Tailwind": "/tailwind.svg"
-      }
-    },
-    "sustainabilityPage": {
-      "companyName": "Sustainability Page",
-      "role": "Frontend Developer (Intern)",
-      "about": "Sustainability Page is aimed at assisting companies to make sustainability in their organization the norm, not an afterthought.",
-      "projectDetails": "I work with the Product Owner and the Frontend Leads to quickly and efficiently implement UI changes. The aim is to efficiently use our API to benefit the user experience in a manner that can be tested using Cypress.",
-      "techUsed": {
-        "Next.js": "/next.svg",
-        "TypeScript": "/typescript.svg",
-        "Tailwind": "/tailwind.svg",
-        "Yarn": "/yarn.svg",
-        "Python": "/python.svg",
-        "Django": "/django.svg",
-        "Cypress": "/cypress.svg"
       }
     }
   },

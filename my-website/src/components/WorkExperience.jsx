@@ -7,6 +7,14 @@ const WorkExperience = () => {
       <h1 className="font-bold text-3xl underline mb-2">Work Experience</h1>
       <div className="flex flex-col justify-center items-center">
         <FlipCard
+          textForCard={data.workProjects.findAdoc}
+          imgSource="/findadoc.svg"
+        />
+        <FlipCard
+          textForCard={data.workProjects.codeChrysalis}
+          imgSource="/codechrysalis.png"
+        />
+        <FlipCard
           textForCard={data.workProjects.javco}
           imgSource="/javco_logo.png"
         />
@@ -15,16 +23,8 @@ const WorkExperience = () => {
           imgSource="/daizen.png"
         />
         <FlipCard
-          textForCard={data.workProjects.findAdoc}
-          imgSource="/findadoc.svg"
-        />
-        <FlipCard
           textForCard={data.workProjects.expressAi}
           imgSource="/expressai.svg"
-        />
-        <FlipCard
-          textForCard={data.workProjects.codeChrysalis}
-          imgSource="/codechrysalis.png"
         />
       </div>
     </div>
